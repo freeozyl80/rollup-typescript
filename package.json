@@ -1,0 +1,23 @@
+{
+  "name": "rollup-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nm": "node ./node_modules/rollup/bin/rollup  -w -c build/nm_build.js",
+    "ts": "node ./node_modules/rollup/bin/rollup -w -c build/ts_build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeozyl80/rollup-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freeozyl80/rollup-typescript/issues"
+  },
+  "homepage": "https://github.com/freeozyl80/rollup-typescript#readme",
+  "devDependencies": {
+    "rollup": "^0.57.0"
+  }
+}

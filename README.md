@@ -1,1 +1,4 @@
-#·ÖÏíÄÚÈÝ TYPESCRIPT && ROLLUP
+# rollup && typescript
+
+> rollup -c è¡¨ç¤ºä½¿ç”¨configæ–‡ä»¶
+
