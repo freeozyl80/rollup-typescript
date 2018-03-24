@@ -1,0 +1,24 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"airbnb-base"
+	],
+	"parserOptions": {
+		"sourceType": "module" //代码为ECMAVERSION模块
+	},
+	"rules": {
+		"no-console": off,
+		"indent": ["warn", 4],
+		"linebreak-style": ["error", "unix"],
+		"quotes": ["error", "double", {"allowTemplateLiterals": true }],
+		"semi": ["error", "always"],
+		"eol-last": ["error", "never"],
+		"import/newline-after-import": ["error", { "count": 0 }]
+	}
+}
+
+//错误级别，off, warn, error

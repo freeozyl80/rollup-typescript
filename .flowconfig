@@ -1,0 +1,7 @@
+[ignore]
+.*/node_modules/.*
+.*/build/.*
+.*/dist/.*
+
+[options]
+module.name_mapper='^appendix01$' -> '<PROJECT_ROOT>/src/normal/appendix01'

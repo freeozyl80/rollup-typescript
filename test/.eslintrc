@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": false,
+    "node": true,
+    "es6": true,
+    "jasmine": true
+  },
+  "plugins": [
+    "jasmine"
+  ],
+  "rules": {
+    "jasmine/no-focused-tests": 2
+  },
+  "globals": {
+  }
+}
