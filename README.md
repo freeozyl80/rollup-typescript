@@ -1,4 +1,3 @@
-# rollup && typescript
+# typescript 相关备注：
 
-> rollup -c 表示使用config文件
-
+* ts写的模块在发布时仍需要js发布，大致一个问题，ts那么类型数据都没了，所以需要一个d.ts文件标记某个js库里对象的类型。

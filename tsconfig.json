@@ -12,6 +12,7 @@
         "moduleResolution": "node",
         "noEmitOnError": false,
         "strictNullChecks": true,
+        "strictPropertyInitialization": false,
         "forceConsistentCasingInFileNames": true,
         "noImplicitReturns": true,
         "declaration": true,
