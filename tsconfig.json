@@ -4,7 +4,7 @@
         "noImplicitAny": true,
         "sourceMap": true,
         "noUnusedParameters": true,
-        "noUnusedLocals": true,
+        "noUnusedLocals": false,
         "noImplicitThis": true,
         "diagnostics": true,
         "listFiles": true,

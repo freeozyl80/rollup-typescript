@@ -81,3 +81,81 @@ class Group {
 		this.member = m;
 	}
 }
+console.log('类的继承');
+console.log(new Group('A', ['a,b,c']).member);
+
+// 函数
+	// 结构
+	// 函数重载
+function code(word: string): boolean;
+function code(word: number): boolean;
+function code(word: any): any {
+    if (typeof word == "string") {
+    	return true;
+    }
+    else if (typeof word == "number") {
+    	return false;
+    } else {
+    	return 'UNKNOWN TYPE'
+    }
+}
+
+//泛型
+function coding<T>(arg: T): T {
+	return arg;
+}
+let badwork = coding('ajajaja');
+let goodwork = coding(1);
+console.log(badwork, goodwork);
+
+//枚举
+const enum Directions {
+    Up,
+    Down,
+    Left,
+    Right
+}
+
+let directions = [Directions.Up, Directions.Down, Directions.Left, Directions.Right]
+console.log(directions);
+// mixins
+function extend<T, U>(first: T, second: U): T & U {
+    let result = <T & U>{};
+    for (let id in first) {
+        (<any>result)[id] = (<any>first)[id];
+    }
+    for (let id in second) {
+        if (!result.hasOwnProperty(id)) {
+            (<any>result)[id] = (<any>second)[id];
+        }
+    }
+    return result;
+}
+
+class Person {
+    constructor(public name: string) { }
+}
+interface Loggable {
+    log(): void;
+}
+class ConsoleLogger implements Loggable {
+    log() {
+    	console.log('This is mixin test')
+    }
+}
+let jim = extend(new Person("Jim"), new ConsoleLogger());
+let n = jim.name;
+jim.log();
+
+
+// 命名空间：
+namespace Company {
+    export namespace ITCompany {
+        export class Tencent { }
+        export class Baidu { }
+    }
+}
+
+import xxx = Company.ITCompany;
+let qzone = new xxx.Tencent();
+console.log(qzone);

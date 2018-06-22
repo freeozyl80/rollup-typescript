@@ -11,3 +11,9 @@ export function exportFn2() {
 	}
 	return foo("Hello!", 2);
 }
+
+type object<T> = { foo: T };
+let numberObject: object<number> = { foo: 0 };
+let stringObject: object<string> = { foo: "foo" };
+
+//类型转化检测大法：
